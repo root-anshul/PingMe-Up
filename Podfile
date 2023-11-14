@@ -6,5 +6,8 @@ target 'PingMe Up' do
   use_frameworks!
 
   # Pods for PingMe Up
+pod 'Firebase/Core'
+pod 'Firebase/Auth'
+pod 'Firebase/Database' 
 
 end

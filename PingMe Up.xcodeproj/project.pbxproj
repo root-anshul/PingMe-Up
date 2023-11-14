@@ -19,9 +19,13 @@
 		3D0E6CD82B03ECD80047FC0A /* VideoPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0E6CD72B03ECD80047FC0A /* VideoPlayerViewController.swift */; };
 		3D0E6CDA2B03ECFA0047FC0A /* NewConversationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0E6CD92B03ECFA0047FC0A /* NewConversationViewController.swift */; };
 		3D0E6CDC2B03ED090047FC0A /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0E6CDB2B03ED090047FC0A /* ProfileViewController.swift */; };
+		3D0E6CDF2B03FA400047FC0A /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0E6CDE2B03FA400047FC0A /* Extensions.swift */; };
+		3D1D90A92B0414130052AE98 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3D1D90A82B0414130052AE98 /* GoogleService-Info.plist */; };
+		642D224FB652E993CB411BB0 /* Pods_PingMe_Up.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DEB58DB4CF0A51D066D0CC9 /* Pods_PingMe_Up.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0E11E0CD382B7BF2D1C23FB3 /* Pods-PingMe Up.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PingMe Up.release.xcconfig"; path = "Target Support Files/Pods-PingMe Up/Pods-PingMe Up.release.xcconfig"; sourceTree = "<group>"; };
 		3D0E6CB42B03EA400047FC0A /* PingMe Up.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PingMe Up.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D0E6CB72B03EA400047FC0A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3D0E6CB92B03EA400047FC0A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +40,10 @@
 		3D0E6CD72B03ECD80047FC0A /* VideoPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerViewController.swift; sourceTree = "<group>"; };
 		3D0E6CD92B03ECFA0047FC0A /* NewConversationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewConversationViewController.swift; sourceTree = SOURCE_ROOT; };
 		3D0E6CDB2B03ED090047FC0A /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		3D0E6CDE2B03FA400047FC0A /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		3D1D90A82B0414130052AE98 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		3DEB58DB4CF0A51D066D0CC9 /* Pods_PingMe_Up.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PingMe_Up.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EEE7DC08D248AC72F0D2C323 /* Pods-PingMe Up.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PingMe Up.debug.xcconfig"; path = "Target Support Files/Pods-PingMe Up/Pods-PingMe Up.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,17 +51,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				642D224FB652E993CB411BB0 /* Pods_PingMe_Up.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C81BA343D1081642114A8A6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EEE7DC08D248AC72F0D2C323 /* Pods-PingMe Up.debug.xcconfig */,
+				0E11E0CD382B7BF2D1C23FB3 /* Pods-PingMe Up.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		3D0E6CAB2B03EA400047FC0A = {
 			isa = PBXGroup;
 			children = (
 				3D0E6CB62B03EA400047FC0A /* PingMe Up */,
 				3D0E6CB52B03EA400047FC0A /* Products */,
+				2C81BA343D1081642114A8A6 /* Pods */,
+				C63D569D0877D68CED1179E4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -68,6 +88,7 @@
 		3D0E6CB62B03EA400047FC0A /* PingMe Up */ = {
 			isa = PBXGroup;
 			children = (
+				3D1D90A82B0414130052AE98 /* GoogleService-Info.plist */,
 				3D0E6CCF2B03EB0E0047FC0A /* Resources */,
 				3D0E6CCE2B03EB070047FC0A /* Models */,
 				3D0E6CCD2B03EB010047FC0A /* Views */,
@@ -82,8 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				3D0E6CBB2B03EA400047FC0A /* ConversationsViewController.swift */,
-				3D0E6CD12B03EC9E0047FC0A /* LoginViewController.swift */,
-				3D0E6CD32B03ECAB0047FC0A /* RegisterViewController.swift */,
+				3D0E6CDD2B03F02C0047FC0A /* Login||Register */,
 				3D0E6CD52B03ECC40047FC0A /* PhotoViewerViewController.swift */,
 				3D0E6CD72B03ECD80047FC0A /* VideoPlayerViewController.swift */,
 				3D0E6CD92B03ECFA0047FC0A /* NewConversationViewController.swift */,
@@ -120,6 +140,7 @@
 			children = (
 				3D0E6CB72B03EA400047FC0A /* AppDelegate.swift */,
 				3D0E6CB92B03EA400047FC0A /* SceneDelegate.swift */,
+				3D0E6CDE2B03FA400047FC0A /* Extensions.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -133,6 +154,23 @@
 			path = StoryBoards;
 			sourceTree = "<group>";
 		};
+		3D0E6CDD2B03F02C0047FC0A /* Login||Register */ = {
+			isa = PBXGroup;
+			children = (
+				3D0E6CD12B03EC9E0047FC0A /* LoginViewController.swift */,
+				3D0E6CD32B03ECAB0047FC0A /* RegisterViewController.swift */,
+			);
+			path = "Login||Register";
+			sourceTree = "<group>";
+		};
+		C63D569D0877D68CED1179E4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3DEB58DB4CF0A51D066D0CC9 /* Pods_PingMe_Up.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -140,9 +178,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3D0E6CC82B03EA410047FC0A /* Build configuration list for PBXNativeTarget "PingMe Up" */;
 			buildPhases = (
+				AC10E198B9BDD14341C0B934 /* [CP] Check Pods Manifest.lock */,
 				3D0E6CB02B03EA400047FC0A /* Sources */,
 				3D0E6CB12B03EA400047FC0A /* Frameworks */,
 				3D0E6CB22B03EA400047FC0A /* Resources */,
+				69E8D5561FB2C1413F4399F5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -192,12 +232,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D0E6CC42B03EA410047FC0A /* LaunchScreen.storyboard in Resources */,
+				3D1D90A92B0414130052AE98 /* GoogleService-Info.plist in Resources */,
 				3D0E6CC12B03EA410047FC0A /* Assets.xcassets in Resources */,
 				3D0E6CBF2B03EA400047FC0A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		69E8D5561FB2C1413F4399F5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PingMe Up/Pods-PingMe Up-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PingMe Up/Pods-PingMe Up-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PingMe Up/Pods-PingMe Up-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AC10E198B9BDD14341C0B934 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PingMe Up-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3D0E6CB02B03EA400047FC0A /* Sources */ = {
@@ -209,6 +292,7 @@
 				3D0E6CDA2B03ECFA0047FC0A /* NewConversationViewController.swift in Sources */,
 				3D0E6CBC2B03EA400047FC0A /* ConversationsViewController.swift in Sources */,
 				3D0E6CD82B03ECD80047FC0A /* VideoPlayerViewController.swift in Sources */,
+				3D0E6CDF2B03FA400047FC0A /* Extensions.swift in Sources */,
 				3D0E6CB82B03EA400047FC0A /* AppDelegate.swift in Sources */,
 				3D0E6CDC2B03ED090047FC0A /* ProfileViewController.swift in Sources */,
 				3D0E6CBA2B03EA400047FC0A /* SceneDelegate.swift in Sources */,
@@ -359,11 +443,13 @@
 		};
 		3D0E6CC92B03EA410047FC0A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EEE7DC08D248AC72F0D2C323 /* Pods-PingMe Up.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "PingMe Up/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -389,11 +475,13 @@
 		};
 		3D0E6CCA2B03EA410047FC0A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E11E0CD382B7BF2D1C23FB3 /* Pods-PingMe Up.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "PingMe Up/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

@@ -20,7 +20,8 @@
 		3D0E6CDA2B03ECFA0047FC0A /* NewConversationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0E6CD92B03ECFA0047FC0A /* NewConversationViewController.swift */; };
 		3D0E6CDC2B03ED090047FC0A /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0E6CDB2B03ED090047FC0A /* ProfileViewController.swift */; };
 		3D0E6CDF2B03FA400047FC0A /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0E6CDE2B03FA400047FC0A /* Extensions.swift */; };
-		3D1D90A92B0414130052AE98 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3D1D90A82B0414130052AE98 /* GoogleService-Info.plist */; };
+		3D573A3A2B051EBD0019E8FF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3D573A392B051EBD0019E8FF /* GoogleService-Info.plist */; };
+		3D9E53E22B04E0A50054A04A /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9E53E12B04E0A50054A04A /* DatabaseManager.swift */; };
 		642D224FB652E993CB411BB0 /* Pods_PingMe_Up.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DEB58DB4CF0A51D066D0CC9 /* Pods_PingMe_Up.framework */; };
 /* End PBXBuildFile section */
 
@@ -41,7 +42,8 @@
 		3D0E6CD92B03ECFA0047FC0A /* NewConversationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewConversationViewController.swift; sourceTree = SOURCE_ROOT; };
 		3D0E6CDB2B03ED090047FC0A /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		3D0E6CDE2B03FA400047FC0A /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
-		3D1D90A82B0414130052AE98 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		3D573A392B051EBD0019E8FF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		3D9E53E12B04E0A50054A04A /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
 		3DEB58DB4CF0A51D066D0CC9 /* Pods_PingMe_Up.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PingMe_Up.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEE7DC08D248AC72F0D2C323 /* Pods-PingMe Up.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PingMe Up.debug.xcconfig"; path = "Target Support Files/Pods-PingMe Up/Pods-PingMe Up.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -88,7 +90,7 @@
 		3D0E6CB62B03EA400047FC0A /* PingMe Up */ = {
 			isa = PBXGroup;
 			children = (
-				3D1D90A82B0414130052AE98 /* GoogleService-Info.plist */,
+				3D573A392B051EBD0019E8FF /* GoogleService-Info.plist */,
 				3D0E6CCF2B03EB0E0047FC0A /* Resources */,
 				3D0E6CCE2B03EB070047FC0A /* Models */,
 				3D0E6CCD2B03EB010047FC0A /* Views */,
@@ -105,9 +107,9 @@
 				3D0E6CBB2B03EA400047FC0A /* ConversationsViewController.swift */,
 				3D0E6CDD2B03F02C0047FC0A /* Login||Register */,
 				3D0E6CD52B03ECC40047FC0A /* PhotoViewerViewController.swift */,
+				3D0E6CDB2B03ED090047FC0A /* ProfileViewController.swift */,
 				3D0E6CD72B03ECD80047FC0A /* VideoPlayerViewController.swift */,
 				3D0E6CD92B03ECFA0047FC0A /* NewConversationViewController.swift */,
-				3D0E6CDB2B03ED090047FC0A /* ProfileViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -141,6 +143,7 @@
 				3D0E6CB72B03EA400047FC0A /* AppDelegate.swift */,
 				3D0E6CB92B03EA400047FC0A /* SceneDelegate.swift */,
 				3D0E6CDE2B03FA400047FC0A /* Extensions.swift */,
+				3D9E53E12B04E0A50054A04A /* DatabaseManager.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -232,8 +235,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D0E6CC42B03EA410047FC0A /* LaunchScreen.storyboard in Resources */,
-				3D1D90A92B0414130052AE98 /* GoogleService-Info.plist in Resources */,
 				3D0E6CC12B03EA410047FC0A /* Assets.xcassets in Resources */,
+				3D573A3A2B051EBD0019E8FF /* GoogleService-Info.plist in Resources */,
 				3D0E6CBF2B03EA400047FC0A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -288,6 +291,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D0E6CD22B03EC9E0047FC0A /* LoginViewController.swift in Sources */,
+				3D9E53E22B04E0A50054A04A /* DatabaseManager.swift in Sources */,
 				3D0E6CD42B03ECAB0047FC0A /* RegisterViewController.swift in Sources */,
 				3D0E6CDA2B03ECFA0047FC0A /* NewConversationViewController.swift in Sources */,
 				3D0E6CBC2B03EA400047FC0A /* ConversationsViewController.swift in Sources */,

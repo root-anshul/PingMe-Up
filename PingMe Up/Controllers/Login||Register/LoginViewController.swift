@@ -7,7 +7,7 @@
 
 import UIKit
 import FirebaseAuth
-
+import GoogleSignIn
 
 class LoginViewController: UIViewController {
     private let scrollView: UIScrollView = {
@@ -64,9 +64,11 @@ class LoginViewController: UIViewController {
         button.titleLabel?.font = .systemFont(ofSize: 20, weight: .bold)
         return button
     }()
+    private let googleLogin = GIDSignInButton()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         title = "Log In"
         view.backgroundColor = .white
         
@@ -86,7 +88,7 @@ class LoginViewController: UIViewController {
         scrollView.addSubview(email)
         scrollView.addSubview(password)
         scrollView.addSubview(loginbutton)
-        
+        scrollView.addSubview(googleLogin)
     }
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
@@ -106,6 +108,10 @@ class LoginViewController: UIViewController {
                              height: 52)
         loginbutton.frame = CGRect(x: 30,
                              y: password.bottom+10,
+                             width: scrollView.width-60,
+                             height: 52)
+        googleLogin.frame = CGRect(x: 30,
+                             y: loginbutton.bottom+10,
                              width: scrollView.width-60,
                              height: 52)
     }

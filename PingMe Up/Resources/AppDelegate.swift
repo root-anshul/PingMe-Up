@@ -7,7 +7,9 @@
 
 import UIKit
 import Firebase
-@main
+import GoogleSignIn
+
+@UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
@@ -16,6 +18,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         FirebaseApp.configure()
         
+        
+//        GIDSignIn.sharedInstance.currentUser?.userID = FirebaseApp.app()?.options.clientID
+//        GIDSignIn.sharedInstance.delegate = self
         return true
     }
 
@@ -28,11 +33,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func application(_ application: UIApplication, didDiscardSceneSessions sceneSessions: Set<UISceneSession>) {
-        // Called when the user discards a scene session.
-        // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
-        // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
+       
     }
-
-
+//    func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
+//        guard error == nil else {
+//            if let error = error{
+//                print("Failed to sign in with Google: \(error)")
+//            }
+//            return
+//        }
+//        guard let authentication = user.auth else { return }
+//        let credential = GoogleAuthProvider.credential(withIDToken: authentication.idToken,
+//                                                       accessToken: authentication.accessToken)
+//        
+//        
+//    }
+    
 }
 

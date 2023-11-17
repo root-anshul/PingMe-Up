@@ -5,9 +5,17 @@ target 'PingMe Up' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
-  # Pods for PingMe Up
+# Pods for PingMe Up
 pod 'Firebase/Core'
 pod 'Firebase/Auth'
-pod 'Firebase/Database' 
+pod 'Firebase/Database'
+ 
+# Google Sign In
+pod 'GoogleSignIn'
+
+pod 'MessageKit'
+
+pod 'RealmSwift'
+pod 'SDWebImage'
 
 end

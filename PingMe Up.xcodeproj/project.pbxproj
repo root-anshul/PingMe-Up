@@ -22,7 +22,9 @@
 		3D0E6CDF2B03FA400047FC0A /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0E6CDE2B03FA400047FC0A /* Extensions.swift */; };
 		3D1E659F2B07995400BCB6FF /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 3D1E659E2B07995400BCB6FF /* GoogleSignIn */; };
 		3D1E65A12B07995400BCB6FF /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 3D1E65A02B07995400BCB6FF /* GoogleSignInSwift */; };
+		3D1E65A32B07B4FF00BCB6FF /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1E65A22B07B4FF00BCB6FF /* ChatViewController.swift */; };
 		3D6CEFF02B0788BC00DD1A7D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3D6CEFEF2B0788BC00DD1A7D /* GoogleService-Info.plist */; };
+		3D9C72742B07C4330058FF9D /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9C72732B07C4330058FF9D /* Storage.swift */; };
 		3D9E53E22B04E0A50054A04A /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9E53E12B04E0A50054A04A /* DatabaseManager.swift */; };
 		642D224FB652E993CB411BB0 /* Pods_PingMe_Up.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DEB58DB4CF0A51D066D0CC9 /* Pods_PingMe_Up.framework */; };
 /* End PBXBuildFile section */
@@ -44,7 +46,9 @@
 		3D0E6CD92B03ECFA0047FC0A /* NewConversationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewConversationViewController.swift; sourceTree = SOURCE_ROOT; };
 		3D0E6CDB2B03ED090047FC0A /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		3D0E6CDE2B03FA400047FC0A /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		3D1E65A22B07B4FF00BCB6FF /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		3D6CEFEF2B0788BC00DD1A7D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		3D9C72732B07C4330058FF9D /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
 		3D9E53E12B04E0A50054A04A /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
 		3DEB58DB4CF0A51D066D0CC9 /* Pods_PingMe_Up.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PingMe_Up.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEE7DC08D248AC72F0D2C323 /* Pods-PingMe Up.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PingMe Up.debug.xcconfig"; path = "Target Support Files/Pods-PingMe Up/Pods-PingMe Up.debug.xcconfig"; sourceTree = "<group>"; };
@@ -114,6 +118,7 @@
 				3D0E6CDB2B03ED090047FC0A /* ProfileViewController.swift */,
 				3D0E6CD72B03ECD80047FC0A /* VideoPlayerViewController.swift */,
 				3D0E6CD92B03ECFA0047FC0A /* NewConversationViewController.swift */,
+				3D1E65A22B07B4FF00BCB6FF /* ChatViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -148,6 +153,7 @@
 				3D0E6CB92B03EA400047FC0A /* SceneDelegate.swift */,
 				3D0E6CDE2B03FA400047FC0A /* Extensions.swift */,
 				3D9E53E12B04E0A50054A04A /* DatabaseManager.swift */,
+				3D9C72732B07C4330058FF9D /* Storage.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -229,7 +235,7 @@
 			);
 			mainGroup = 3D0E6CAB2B03EA400047FC0A;
 			packageReferences = (
-				3D1E659D2B07995400BCB6FF /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS.git" */,
+				3D1E659D2B07995400BCB6FF /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
 			);
 			productRefGroup = 3D0E6CB52B03EA400047FC0A /* Products */;
 			projectDirPath = "";
@@ -302,6 +308,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D0E6CD22B03EC9E0047FC0A /* LoginViewController.swift in Sources */,
+				3D1E65A32B07B4FF00BCB6FF /* ChatViewController.swift in Sources */,
 				3D9E53E22B04E0A50054A04A /* DatabaseManager.swift in Sources */,
 				3D0E6CD42B03ECAB0047FC0A /* RegisterViewController.swift in Sources */,
 				3D0E6CDA2B03ECFA0047FC0A /* NewConversationViewController.swift in Sources */,
@@ -312,6 +319,7 @@
 				3D0E6CDC2B03ED090047FC0A /* ProfileViewController.swift in Sources */,
 				3D0E6CBA2B03EA400047FC0A /* SceneDelegate.swift in Sources */,
 				3D0E6CD62B03ECC40047FC0A /* PhotoViewerViewController.swift in Sources */,
+				3D9C72742B07C4330058FF9D /* Storage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -548,7 +556,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		3D1E659D2B07995400BCB6FF /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS.git" */ = {
+		3D1E659D2B07995400BCB6FF /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/google/GoogleSignIn-iOS.git";
 			requirement = {
@@ -561,12 +569,12 @@
 /* Begin XCSwiftPackageProductDependency section */
 		3D1E659E2B07995400BCB6FF /* GoogleSignIn */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 3D1E659D2B07995400BCB6FF /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS.git" */;
+			package = 3D1E659D2B07995400BCB6FF /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
 			productName = GoogleSignIn;
 		};
 		3D1E65A02B07995400BCB6FF /* GoogleSignInSwift */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 3D1E659D2B07995400BCB6FF /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS.git" */;
+			package = 3D1E659D2B07995400BCB6FF /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
 			productName = GoogleSignInSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
